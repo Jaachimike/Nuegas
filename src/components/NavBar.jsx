@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/Navbar/Logo.png";
 import overview_logo from "../assets/Navbar/category-2.png";
 import task_logo from "../assets/Navbar/book.png";
@@ -24,23 +25,18 @@ const NavBar = () => {
           </div>
           <ul className="mt-6 *:mb-6">
             <li className="p-4 hover:bg-gray-100 rounded-lg">
-              <a href="/overview" className="flex items-center">
+              <Link to="/" className="flex items-center">
                 <img src={overview_logo} alt="" className="mr-4" />
                 <span className="font-semibold">Overview</span>
-              </a>
+              </Link>
             </li>
             <li className="p-4 hover:bg-gray-100 rounded-lg">
-              <a href="/overview" className="flex items-center">
+              <Link to="/tasks" className="flex items-center">
                 <img src={task_logo} alt="" className="mr-4" />
                 <span className="font-semibold">Tasks</span>
-              </a>
+              </Link>
             </li>
-            <li className="p-4 hover:bg-gray-100 rounded-lg">
-              <a href="/overview" className="flex items-center">
-                <img src={mentors_logo} alt="" className="mr-4" />
-                <span className="font-semibold">Mentors</span>
-              </a>
-            </li>
+
             <li className="p-4 hover:bg-gray-100 rounded-lg">
               <a href="/overview" className="flex items-center">
                 <img src={message_logo} alt="" className="mr-4" />
